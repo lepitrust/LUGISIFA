@@ -3,7 +3,11 @@
 //dannato GIT
 //che idea mi è venuta...
 #include "stdafx.h"
-
+/*
+Ciao
+come stai questa è una prova col dannato git
+porcazza miseria!!!
+*/
 static void PrintMACaddress(unsigned char MACData[]);
 
 int _tmain(int argc, _TCHAR* argv[])
