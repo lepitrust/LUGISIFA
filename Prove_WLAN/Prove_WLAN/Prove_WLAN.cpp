@@ -1,6 +1,7 @@
 // Prove_WLAN.cpp : definisce il punto di ingresso dell'applicazione console.
 //
-
+//dannato GIT
+//che idea mi è venuta...
 #include "stdafx.h"
 
 static void PrintMACaddress(unsigned char MACData[]);
