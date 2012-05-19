@@ -1,15 +1,18 @@
-﻿Compilazione avviata 18/05/2012 16:23:31.
-     1>Progetto "C:\Users\Luca\documents\visual studio 2010\Projects\Prove_WLAN\Prove_WLAN\Prove_WLAN.vcxproj" sul nodo 2 (destinazioni: build).
+﻿Compilazione avviata 19/05/2012 14.24.20.
+     1>Progetto "C:\Users\admin\LUGISIFA\Prove_WLAN\Prove_WLAN\Prove_WLAN.vcxproj" sul nodo 2 (destinazioni: build).
      1>InitializeBuildStatus:
          Creazione di "Debug\Prove_WLAN.unsuccessfulbuild". È stato specificato "AlwaysCreate".
        ClCompile:
          Tutti gli output sono aggiornati.
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Prove_WLAN.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Prove_WLAN.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Prove_WLAN.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Prove_WLAN.cpp
          Prove_WLAN.cpp
+     1>c:\users\admin\lugisifa\prove_wlan\prove_wlan\prove_wlan.cpp(307): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371): vedere la dichiarazione di 'sprintf'
        ManifestResourceCompile:
          Tutti gli output sono aggiornati.
        Link:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Luca\documents\visual studio 2010\Projects\Prove_WLAN\Debug\Prove_WLAN.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Prove_WLAN.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Luca\documents\visual studio 2010\Projects\Prove_WLAN\Debug\Prove_WLAN.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Luca\documents\visual studio 2010\Projects\Prove_WLAN\Debug\Prove_WLAN.lib" /MACHINE:X86 Debug\Prove_WLAN.exe.embed.manifest.res
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Prove_WLAN.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.lib" /MACHINE:X86 Debug\Prove_WLAN.exe.embed.manifest.res
+         Debug\MAC_test.obj
          Debug\Prove_WLAN.obj
          Debug\stdafx.obj
        Manifest:
@@ -17,12 +20,12 @@
          Tutti gli output sono aggiornati.
        LinkEmbedManifest:
          Tutti gli output sono aggiornati.
-         Prove_WLAN.vcxproj -> C:\Users\Luca\documents\visual studio 2010\Projects\Prove_WLAN\Debug\Prove_WLAN.exe
+         Prove_WLAN.vcxproj -> C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.exe
        FinalizeBuildStatus:
          Eliminazione del file "Debug\Prove_WLAN.unsuccessfulbuild" in corso.
          Aggiornamento timestamp di "Debug\Prove_WLAN.lastbuildstate".
-     1>Compilazione progetto "C:\Users\Luca\documents\visual studio 2010\Projects\Prove_WLAN\Prove_WLAN\Prove_WLAN.vcxproj" (destinazioni: build) completata.
+     1>Compilazione progetto "C:\Users\admin\LUGISIFA\Prove_WLAN\Prove_WLAN\Prove_WLAN.vcxproj" (destinazioni: build) completata.
 
 Compilazione completata.
 
-Tempo trascorso 00:00:09.12
+Tempo trascorso 00:00:03.07

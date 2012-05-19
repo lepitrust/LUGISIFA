@@ -1,18 +1,19 @@
 // Prove_WLAN.cpp : definisce il punto di ingresso dell'applicazione console.
-//
-//dannato GIT
-//che idea mi è venuta...
+
 #include "stdafx.h"
-/*
-Ciao
-come stai questa è una prova col dannato git
-porcazza miseria!!!
-*/
-static void PrintMACaddress(unsigned char MACData[]);
+#include "MAC_test.h"
+#include <string>
+#include <map>
+#include <iostream>
+#include <sstream>
+std::string PrintMACaddress(unsigned char MACData[]);
 
 int _tmain(int argc, _TCHAR* argv[])
 {
- // Declare and initialize variables.
+	/*Test per funzione di errore*/
+	std::map<std::string, int> lMacAddress_TEST;
+	
+	// Declare and initialize variables.
 
     HANDLE hClient = NULL;		//Handle del client utilizzato nella sessione corrente
     DWORD dwMaxClient = 2;      //E' una costante che va inserita in WlanOpenHandle (1->Win XP SP2/3 | 2->Win Vista/Server 2008)    
@@ -157,9 +158,13 @@ int _tmain(int argc, _TCHAR* argv[])
 					if(uscita==ERROR_SUCCESS)
 					wprintf(L"\n  GOOD Exit status Bss\n");
 					wprintf(L"\n  Number of Bss entries: %u\n", pWlanBssList->dwNumberOfItems);
-					for(int z=0; z<(int)pWlanBssList->dwNumberOfItems;z++){
-					PWLAN_BSS_ENTRY px = (WLAN_BSS_ENTRY *) & pWlanBssList->wlanBssEntries[z];
-					PrintMACaddress(px->dot11Bssid);}
+					//for(int z=0; z<(int)pWlanBssList->dwNumberOfItems;z++)
+					//{
+						PWLAN_BSS_ENTRY px = (WLAN_BSS_ENTRY *) & pWlanBssList->wlanBssEntries;
+						std::string sMACAddress = PrintMACaddress(px->dot11Bssid);
+					//}
+					std::cout << sMACAddress;
+
 					/*----------------------------------------------------------------------------------*/
 					/*----------------------------------------------------------------------------------*/
                     wprintf(L"  BSS Network type[%u]:\t ", j);
@@ -195,8 +200,10 @@ int _tmain(int argc, _TCHAR* argv[])
                         iRSSI = -100 + (pBssEntry->wlanSignalQuality/2);    
                         
                     wprintf(L"  Signal Quality[%u]:\t %u (RSSI: %i dBm)\n", j, pBssEntry->wlanSignalQuality, iRSSI);
-
-                    wprintf(L"  Security Enabled[%u]:\t ", j);
+					
+					lMacAddress_TEST.insert(std::make_pair(sMACAddress,iRSSI));
+                    
+					wprintf(L"  Security Enabled[%u]:\t ", j);
                     if (pBssEntry->bSecurityEnabled)
                         wprintf(L"Yes\n");
                     else
@@ -292,8 +299,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 /*PROVA FUNZIONE PER STAMPA MAC ADDRESS*/
-static void PrintMACaddress(unsigned char MACData[])
+std::string PrintMACaddress(unsigned char MACData[])
 {
-    wprintf(L"  MAC Address: %02X-%02X-%02X-%02X-%02X-%02X\n", 
+    //utilizzo questa funzione anche per farmi sparare fuori il MAC address in formato std::string
+	char sbuffer[18];
+	wprintf(L"  MAC Address: %02X-%02X-%02X-%02X-%02X-%02X\n", 
         MACData[0], MACData[1], MACData[2], MACData[3], MACData[4], MACData[5]);
+	sprintf(sbuffer, "%02X-%02X-%02X-%02X-%02X-%02X\0", MACData[0], MACData[1], MACData[2], MACData[3], MACData[4], MACData[5]);
+	std::string temp(sbuffer);
+	return temp;
 }
