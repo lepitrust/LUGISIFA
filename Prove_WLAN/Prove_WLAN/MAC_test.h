@@ -1,6 +1,7 @@
 #pragma once
 #include <map>
 #include <string>
+#include <iostream>
 class MAC_test
 {
 public:
@@ -10,6 +11,5 @@ public:
 	float ErrorValue(std::map<std::string, int> lMacAddress_testing);
 private:
 	std::map<std::string, int> lMacAddress;
-
 };
 

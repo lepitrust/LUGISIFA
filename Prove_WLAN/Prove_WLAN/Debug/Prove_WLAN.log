@@ -1,13 +1,12 @@
-﻿Compilazione avviata 19/05/2012 14.24.20.
+﻿Compilazione avviata 20/05/2012 11.41.05.
      1>Progetto "C:\Users\admin\LUGISIFA\Prove_WLAN\Prove_WLAN\Prove_WLAN.vcxproj" sul nodo 2 (destinazioni: build).
      1>InitializeBuildStatus:
          Creazione di "Debug\Prove_WLAN.unsuccessfulbuild". È stato specificato "AlwaysCreate".
        ClCompile:
          Tutti gli output sono aggiornati.
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Prove_WLAN.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Prove_WLAN.cpp
-         Prove_WLAN.cpp
-     1>c:\users\admin\lugisifa\prove_wlan\prove_wlan\prove_wlan.cpp(307): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371): vedere la dichiarazione di 'sprintf'
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Prove_WLAN.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MAC_test.cpp
+         MAC_test.cpp
+     1>c:\users\admin\lugisifa\prove_wlan\prove_wlan\mac_test.cpp(25): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
        ManifestResourceCompile:
          Tutti gli output sono aggiornati.
        Link:
@@ -28,4 +27,4 @@
 
 Compilazione completata.
 
-Tempo trascorso 00:00:03.07
+Tempo trascorso 00:00:42.11

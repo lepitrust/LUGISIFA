@@ -35,6 +35,9 @@ git pull				//aggiorno all'ultimo repository
 
 git add .  				//prepara l'elenco da inviare al server
 git commit				//prepara il messaggio per il log
+/*per scrivere il commento (50 caratteri)
+premere il tasto Insert e quando finito Esc
+per salvare e chiudere il commento digitare :w e poi :q */
 git push --all master  	//upload delle modifiche nel filone principale del progetto
 
 Se non va a buon fine il push vuol dire che qualche file è stato modificato in contemporanea

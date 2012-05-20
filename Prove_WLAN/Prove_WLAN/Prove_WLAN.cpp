@@ -7,9 +7,13 @@
 #include <iostream>
 #include <sstream>
 std::string PrintMACaddress(unsigned char MACData[]);
-
+MAC_test luogo;
 int _tmain(int argc, _TCHAR* argv[])
 {
+	bool first_run=true;
+	DWORD dwRetVal = 0;
+	while(1)
+	{
 	/*Test per funzione di errore*/
 	std::map<std::string, int> lMacAddress_TEST;
 	
@@ -19,7 +23,7 @@ int _tmain(int argc, _TCHAR* argv[])
     DWORD dwMaxClient = 2;      //E' una costante che va inserita in WlanOpenHandle (1->Win XP SP2/3 | 2->Win Vista/Server 2008)    
     DWORD dwCurVersion = 0;		//Versione della WLAN API attualmente utilizzata da inserire nella WlanOpenHandle
     DWORD dwResult = 0;
-    DWORD dwRetVal = 0;
+    
     int iRet = 0;
     
     WCHAR GuidString[39] = {0};		//Conterrà un GUID sottoforma di stringa di caratteri
@@ -163,7 +167,7 @@ int _tmain(int argc, _TCHAR* argv[])
 						PWLAN_BSS_ENTRY px = (WLAN_BSS_ENTRY *) & pWlanBssList->wlanBssEntries;
 						std::string sMACAddress = PrintMACaddress(px->dot11Bssid);
 					//}
-					std::cout << sMACAddress;
+					//std::cout << sMACAddress;
 
 					/*----------------------------------------------------------------------------------*/
 					/*----------------------------------------------------------------------------------*/
@@ -200,9 +204,12 @@ int _tmain(int argc, _TCHAR* argv[])
                         iRSSI = -100 + (pBssEntry->wlanSignalQuality/2);    
                         
                     wprintf(L"  Signal Quality[%u]:\t %u (RSSI: %i dBm)\n", j, pBssEntry->wlanSignalQuality, iRSSI);
-					
+					//Prova con memorizzazione dei MAC
 					lMacAddress_TEST.insert(std::make_pair(sMACAddress,iRSSI));
-                    
+                    if (first_run==true)
+					{
+						luogo.InsertElement(sMACAddress,iRSSI);
+					}
 					wprintf(L"  Security Enabled[%u]:\t ", j);
                     if (pBssEntry->bSecurityEnabled)
                         wprintf(L"Yes\n");
@@ -291,8 +298,20 @@ int _tmain(int argc, _TCHAR* argv[])
         WlanFreeMemory(pIfList);	//Libera la zona di memoria preposta alla lista di NIC appena utilizzata
         pIfList = NULL;
 		}
+	
+		if (first_run==true)
+		{
+			first_run=false;
+		}
+		else
+		{
+			float error;
+			error=luogo.ErrorValue(lMacAddress_TEST);
+			wprintf(L"Errore con i dati memorizzati: %f\n\n", error);
+		}
 	system("pause");
-    return dwRetVal;
+	}
+	return dwRetVal;
 }
 
 
