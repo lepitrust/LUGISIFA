@@ -17,7 +17,7 @@ void MAC_test::InsertElement(string MacAddress, int iRSSI)
 }
 float MAC_test::ErrorValue(map<string, int> lMacAddress_testing)
 {
-	/*Utilizza una funzione del average mean square (media quadratica)*/ 
+	/*Funzione di valutazione dell'errore tra le reti memorizzate e quelle rilevate*/ 
 	using namespace std;
 	float error_value=0;
 	int nValue=0;
@@ -27,12 +27,18 @@ float MAC_test::ErrorValue(map<string, int> lMacAddress_testing)
 		cout << "[MAC_scan:Memory-iRSSI=diff] " << (*ii).first << ": (" << (lMacAddress[(*ii).first]) << ")-(" << (*ii).second << ")=(" << diff << ")" << std::endl;
 		if(abs(diff)!=abs((*ii).second))
 		{
-			//Esiste nella mappa così dovrei avere solo quelli comuni
+			//Il termine differenziale viene sommato solo se esiste nella mappa, in pratica considero solo i termini comuni.
 			error_value+=pow(diff, 2);
 			nValue++;
 		}
 	}
-	cout << "[errorvalue:nvalue] "<< error_value << ":" << nValue << endl;
-	error_value=error_value / nValue;
+	cout << "[errorvalue:nvalue] " << error_value << ":" << nValue << endl;
+	
+	/**********media quadratica********************/
+	//error_value=error_value / nValue;
+	
+	/**********distanza euclidea a N dimensioni****/
+	error_value = sqrt(error_value);
+	
 	return error_value;
 }

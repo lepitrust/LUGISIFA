@@ -3,7 +3,9 @@
 Registrarsi al sito github.com e 
 mandatemi un messaggio con la mail di registrazione in modo che possa aggiungervi...
 
-Scaricare e installare http://msysgit.googlecode.com/files/Git-1.7.10-preview20120409.exe
+Scaricare e installare :
+http://msysgit.googlecode.com/files/Git-1.7.10-preview20120409.exe
+
 Durante l'installazione lasciare tutto a default, modificare solo nella 7' schermata,
 l'opzione "Checkout as-is, commit as-is"
 Finita l'installazione si aprirà una shell
@@ -13,6 +15,7 @@ ssh-keygen -t rsa -C "tuonome@tuoisp.com"
 (lasciate il path di default per la chiave)
 (scegliete una password)
 
+http://help.github.com/win-set-up-git/
 seguite il punto 4 (solo quello) per caricare la chiave sul profilo online
 
 tornate alla shell e digitate:

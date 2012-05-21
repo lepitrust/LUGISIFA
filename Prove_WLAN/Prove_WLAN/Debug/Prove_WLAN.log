@@ -1,18 +1,32 @@
-﻿Compilazione avviata 20/05/2012 21.44.17.
+﻿Compilazione avviata 21/05/2012 9.17.19.
      1>Progetto "C:\Users\admin\LUGISIFA\Prove_WLAN\Prove_WLAN\Prove_WLAN.vcxproj" sul nodo 2 (destinazioni: build).
      1>InitializeBuildStatus:
          Creazione di "Debug\Prove_WLAN.unsuccessfulbuild". È stato specificato "AlwaysCreate".
        ClCompile:
          Tutti gli output sono aggiornati.
-         Tutti gli output sono aggiornati.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Prove_WLAN.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MAC_test.cpp Prove_WLAN.cpp
+         Prove_WLAN.cpp
+     1>c:\users\admin\lugisifa\prove_wlan\prove_wlan\prove_wlan.cpp(327): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371): vedere la dichiarazione di 'sprintf'
+         MAC_test.cpp
+     1>c:\users\admin\lugisifa\prove_wlan\prove_wlan\mac_test.cpp(26): warning C4244: 'inizializzazione': conversione da 'int' a 'float'. Possibile perdita di dati.
+         Generazione del codice in corso...
        ResourceCompile:
          Tutti gli output sono aggiornati.
        ManifestResourceCompile:
          Tutti gli output sono aggiornati.
        Link:
-         Tutti gli output sono aggiornati.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Prove_WLAN.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.lib" /MACHINE:X86 Debug\Prove_WLAN.res
+         Debug\Prove_WLAN.exe.embed.manifest.res
+         Debug\MAC_test.obj
+         Debug\Prove_WLAN.obj
+         Debug\stdafx.obj
        Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Prove_WLAN.exe.embed.manifest" /manifest Debug\Prove_WLAN.exe.intermediate.manifest
          Tutti gli output sono aggiornati.
+       LinkEmbedManifest:
+         Tutti gli output sono aggiornati.
+         Prove_WLAN.vcxproj -> C:\Users\admin\LUGISIFA\Prove_WLAN\Debug\Prove_WLAN.exe
        FinalizeBuildStatus:
          Eliminazione del file "Debug\Prove_WLAN.unsuccessfulbuild" in corso.
          Aggiornamento timestamp di "Debug\Prove_WLAN.lastbuildstate".
@@ -20,4 +34,4 @@
 
 Compilazione completata.
 
-Tempo trascorso 00:00:00.30
+Tempo trascorso 00:00:12.44
