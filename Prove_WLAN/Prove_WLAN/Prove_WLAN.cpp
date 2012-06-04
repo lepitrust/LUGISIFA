@@ -282,6 +282,11 @@ int _tmain(int argc, _TCHAR* argv[])
                     wprintf(L"\n");
                     
                     wprintf(L"\n");
+					if (pWlanBssList!=NULL)
+					{
+        WlanFreeMemory(pWlanBssList);	//Libera la zona di memoria preposta alla lista di reti disponibili appena utilizzata
+        pWlanBssList = NULL;
+		}
                 }
             }
         }
@@ -292,6 +297,7 @@ int _tmain(int argc, _TCHAR* argv[])
         WlanFreeMemory(pBssList);	//Libera la zona di memoria preposta alla lista di reti disponibili appena utilizzata
         pBssList = NULL;
 		}
+	
 
     if (pIfList != NULL) 
 		{
@@ -309,6 +315,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			error=luogo.ErrorValue(lMacAddress_TEST);
 			wprintf(L"Errore con i dati memorizzati: %f\n\n", error);
 		}
+		WlanCloseHandle(hClient, NULL);
 	system("pause");
 	}
 	return dwRetVal;
