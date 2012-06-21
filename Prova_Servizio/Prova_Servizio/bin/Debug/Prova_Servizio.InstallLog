@@ -1,0 +1,21 @@
+﻿Installazione dell'assembly 'C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe' in corso...
+I parametri interessati sono:
+   logtoconsole = 
+   logfile = C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.InstallLog
+   assemblypath = C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe
+Installazione del servizio Service_PROVA in corso...
+Installazione di Service_PROVA completata.
+È in corso la creazione dell'origine di EventLog Service_PROVA nel log Application...
+Commit dell'assembly 'C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe' in corso...
+I parametri interessati sono:
+   logtoconsole = 
+   logfile = C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.InstallLog
+   assemblypath = C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe
+Disinstallazione dell'assembly 'C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe' in corso...
+I parametri interessati sono:
+   logtoconsole = 
+   logfile = C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.InstallLog
+   assemblypath = C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe
+Rimozione dell'origine di EventLog Service_PROVA.
+È in corso la rimozione del servizio Service_PROVA dal sistema...
+Rimozione del servizio Service_PROVA dal sistema completata.

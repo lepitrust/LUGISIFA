@@ -1,0 +1,21 @@
+﻿
+Esecuzione di un'installazione transazionale.
+
+Inizio della fase di installazione.
+Vedere il contenuto del file di log per informazioni sullo stato dell'assembly C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe.
+Il file si trova in C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.InstallLog.
+
+La fase di installazione è stata completata. Sta iniziando la fase di commit.
+Vedere il contenuto del file di log per informazioni sullo stato dell'assembly C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe.
+Il file si trova in C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.InstallLog.
+
+Fase di commit completata.
+
+Installazione transazionale completata.
+
+
+Sta iniziando la disinstallazione.
+Vedere il contenuto del file di log per informazioni sullo stato dell'assembly C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe.
+Il file si trova in C:\Users\Luca\Documents\Visual Studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.InstallLog.
+
+Disinstallazione completata.

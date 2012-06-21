@@ -1,0 +1,9 @@
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.exe
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\bin\Debug\Prova_Servizio.pdb
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\Prova_Servizio.ProjectInstaller.resources
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\Prova_Servizio.Service_PROVA.resources
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\Prova_Servizio.exe
+c:\users\luca\documents\visual studio 2010\Projects\Prova_Servizio\Prova_Servizio\obj\x86\Debug\Prova_Servizio.pdb
